@@ -17,31 +17,31 @@ var connection = mysql.createConnection({
     database: "bamazon"
 });
 
-connection.connect(function(err) {
-    if (err) throw err;
-    console.log("connected as id " + connection.threadId);
-    connection.end();
+connection.connect(function(error) {
+    if (error) throw error;
+    // console.log("connected as id " + connection.threadId);
+    inquirer.prompt([{
+        type: "list",
+        name: "levels",
+        message: "What would you like to do?",
+        choices: ["Customer","Manager","Supervisor","Exit"]
+    }]).then(answers => {
+        switch(answers.levels) { 
+        case "Customer":
+            bamazonCustomer();
+            break;
+        case "Manager":
+            console.log("Manager level is under construction!")
+            break;
+        case "Supervisor": 
+            console.log("Supervisor level is under construction!")
+        case "Exit":
+            connection.end();
+            break;
+        default:
+            console.log("You did not make a selection.")
+            break;
+        }
+    });
 });
 
-inquirer.prompt([{
-    name: 'Category',
-    message: 'Please, choose from one of the choices below: ',
-    type: 'list',
-    choices: [{
-        name: 'Customer'
-    },{
-        name: chalk.gray('Manager')
-    },{
-        name: chalk.gray('Supervisor')
-    }]
-}]).then(function (answer) {
-    if (answer.command === 'Customer') {
-        bamazonCustomer();
-    } else if (answer.command === chalk.gray('Manager')) {
-        //bamazonManager();
-        console.log("Manager access is not available due to maintenance.");
-    } else if (answer.command === chalk.gray('Supervisor')) {
-        //bamazonSupervisor();
-        console.log("Supervisor access is not available due to maintenance.");
-    }
-});
