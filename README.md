@@ -15,7 +15,7 @@ Second, Create a file named ".env" and make sure you have the following code ins
 ```
 SQL_PWD = 'YOUR-SQL-PASSWORD'
 ```
-Third, we are assuming you have the node.js installed. If you don't have it, visit their page on how to install it. It's important because you will be able to install the dependencies for npm. Type "npm i" to get all the dependencies.
+Third, we are assuming you have the node.js installed. If you don't have it, visit  [Node's official site] (https://nodejs.org/en/)  on how to install it. It's important because you will be able to install the dependencies for npm. Type "npm i" to get all the dependencies.
 
 ### Customer Interface
 
