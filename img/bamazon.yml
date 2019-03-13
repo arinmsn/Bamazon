@@ -1,0 +1,241 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\arinm\Workspace\Github-Projects\bamazon
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 145
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 36
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 812
+    content: "\e[0m\e[0K"
+  - delay: 37
+    content: "Windows PowerShell\e[0K\e[?25l\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[0K\r\n\e[0K\r\n\e[0K\e[?25h"
+  - delay: 150
+    content: "PS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon>\e[0K\e[54G"
+  - delay: 2809
+    content: "\e[?25l\rPS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon> \e[0;33;93mn\e[0m\e[0K\e[?25h"
+  - delay: 100
+    content: "\e[0;33;93mo\e[0m\e[0K"
+  - delay: 494
+    content: "\e[0;33;93md\e[0m\e[0K"
+  - delay: 226
+    content: "\e[0;33;93me\e[0m\e[0K"
+  - delay: 95
+    content: "\e[59G"
+  - delay: 311
+    content: "\e[?25l\rPS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon> \e[0;33;93mnode\e[0m b\e[0K\e[?25h"
+  - delay: 122
+    content: "a\e[0K"
+  - delay: 192
+    content: "m\e[0K"
+  - delay: 60
+    content: "a\e[0K"
+  - delay: 313
+    content: "z\e[0K"
+  - delay: 125
+    content: "o\e[0K"
+  - delay: 62
+    content: "n\e[0K"
+  - delay: 244
+    content: ".\e[0K"
+  - delay: 162
+    content: "j\e[0K"
+  - delay: 212
+    content: "s\e[0K"
+  - delay: 227
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 371
+    content: "\e[?25l\e[0;32m?\e[0m \e[0;1mWhat would you like to do?\e[0m (Use arrow keys)\e[0K\r\n\e[0;36m> Customer\e[0m\e[0K\r\n  Manager\e[0K\r\n  Supervisor\e[0K\r\n  Exit\e[0K"
+  - delay: 781
+    content: "\r\e[4A\e[0;32m?\e[0m \e[0;1mWhat would you like to do?\e[0m\e[0K\r\n  Customer\e[0K\r\n  Manager\e[0K\r\n  Supervisor\e[0K\r\n\e[0;36m> Exit\e[0m\e[0K"
+  - delay: 559
+    content: "\r\e[4A\e[0;32m?\e[0m \e[0;1mWhat would you like to do?\e[0m \e[0;36mExit\e[0m\e[0K\r\nPS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon>\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[3A\e[54G\e[?25h"
+  - delay: 1412
+    content: "\e[?25l\rPS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon> \e[0;33;93mnode\e[0m bamazon.js\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[3A\e[69G\e[?25h"
+  - delay: 530
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 406
+    content: "\e[?25l\e[0;32m?\e[0m \e[0;1mWhat would you like to do?\e[0m (Use arrow keys)\e[0K\r\n\e[0;36m> Customer\e[0m\e[0K\r\n  Manager\e[0K\r\n  Supervisor\e[0K\r\n  Exit\e[0K"
+  - delay: 684
+    content: "\r\e[4A\e[0;32m?\e[0m \e[0;1mWhat would you like to do?\e[0m\e[0K\r\n  Customer\e[0K\r\n  Manager\e[0K\r\n  Supervisor\e[0K\r\n\e[0;36m> Exit\e[0m\e[0K"
+  - delay: 718
+    content: "\r\e[1A\e[0;36m> Supervisor\e[0m\e[0K\r\n  Exit\e[0K"
+  - delay: 383
+    content: "\r\e[4A\e[0;32m?\e[0m \e[0;1mWhat would you like to do?\e[0m \e[0;36mSupervisor\e[0m\e[0K\r\nSupervisor level is under construction!\e[0K\r\nPS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon>\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[54G\e[?25h"
+  - delay: 1407
+    content: "\e[?25l\rPS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon> \e[0;33;93mnode\e[0m bamazon.js\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[69G\e[?25h"
+  - delay: 776
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 406
+    content: "\e[?25l\e[0;32m?\e[0m \e[0;1mWhat would you like to do?\e[0m (Use arrow keys)\e[0K\r\n\e[0;36m> Customer\e[0m\e[0K\r\n  Manager\e[0K\r\n  Supervisor\e[0K\r\n  Exit\e[0K"
+  - delay: 688
+    content: "\r\e[4A\e[0;32m?\e[0m \e[0;1mWhat would you like to do?\e[0m\e[0K\r\n  Customer\e[0K\r\n  Manager\e[0K\r\n  Supervisor\e[0K\r\n\e[0;36m> Exit\e[0m\e[0K"
+  - delay: 781
+    content: "\r\e[1A\e[0;36m> Supervisor\e[0m\e[0K\r\n  Exit\e[0K"
+  - delay: 221
+    content: "\r\e[2A\e[0;36m> Manager\e[0m\e[0K\r\n  Supervisor\e[0K\r\n  Exit\e[0K"
+  - delay: 438
+    content: "\r\e[4A\e[0;32m?\e[0m \e[0;1mWhat would you like to do?\e[0m \e[0;36mManager\e[0m\e[0K\r\nManager level is under construction!\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[?25h"
+  - delay: 25
+    content: "PS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon>\e[0K\e[?25l\r\n\e[0K\r\n\e[0K\r\e[2A\e[54G\e[?25h"
+  - delay: 849
+    content: "\e[?25l\rPS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon> \e[0;33;93mnode\e[0m bamazon.js\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[69G\e[?25h"
+  - delay: 369
+    content: "\e[?25l\rPS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon> \e[0;32;92mexit\e[0m\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[58G\e[?25h"
+  - delay: 751
+    content: "\e[?25l\rPS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon> \e[0;33;93mnode\e[0m bamazon.js\e[0K\r\n\e[0K\r\n\e[0K\r\e[2A\e[69G\e[?25h"
+  - delay: 722
+    content: "\e[?25l\r\n\e[?25h"
+  - delay: 407
+    content: "\e[?25l\e[0;32m?\e[0m \e[0;1mWhat would you like to do?\e[0m (Use arrow keys)\e[0K\r\n\e[0;36m> Customer\e[0m\e[0K\r\n  Manager\e[0K\r\n  Supervisor\e[0K\r\n  Exit\e[0K"
+  - delay: 794
+    content: "\r\e[4A\e[0;32m?\e[0m \e[0;1mWhat would you like to do?\e[0m \e[0;36mCustomer\e[0m\e[0K\r\n\e[0K\r\nConnected as id 408\e[0K\r\n\e[0K\r\n\e[0;37;90m┌──────────┬────────────────────────────────────────────────────────────┬────────────────────┬─────────────────────────┬──────────┐\e[0m\e[0K\r\n\e[0;37;90m│\e[0;31m Item ID  \e[0;37;90m│\e[0;31m Name                                                       \e[0;37;90m│\e[0;31m Department         \e[0;37;90m│\e[0;31m Price                   \e[0;37;90m│\e[0;31m Quantity \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 1        \e[0;37;90m│\e[0m Bananas                                                    \e[0;37;90m│\e[0m Produce            \e[0;37;90m│\e[0m $0.6                    \e[0;37;90m│\e[0m 398      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 2        \e[0;37;90m│\e[0m Jalapeno Peppers                                           \e[0;37;90m│\e[0m Produce            \e[0;37;90m│\e[0m $0.7                    \e[0;37;90m│\e[0m 210      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 3        \e[0;37;90m│\e[0m Extra Gentle Daily Lotion                                  \e[0;37;90m│\e[0m Baby               \e[0;37;90m│\e[0m $9.98                   \e[0;37;90m│\e[0m 100      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 4        \e[0;37;90m│\e[0m Parasol Baby Diapers                                       \e[0;37;90m│\e[0m Baby               \e[0;37;90m│\e[0m $25.95                  \e[0;37;90m│\e[0m 50       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 5        \e[0;37;90m│\e[0m Metro Exodus Aurora Limited Edition XOBX                   \e[0;37;90m│\e[0m Video games        \e[0;37;90m│\e[0m $89.99                  \e[0;37;90m│\e[0m 45       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 6        \e[0;37;90m│\e[0m The Legend of Zelda                                        \e[0;37;90m│\e[0m Video games        \e[0;37;90m│\e[0m $59.88                  \e[0;37;90m│\e[0m 25       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 7        \e[0;37;90m│\e[0m Brown Bear Brown Bear What Do You See                      \e[0;37;90m│\e[0m Books              \e[0;37;90m│\e[0m $8.71                   \e[0;37;90m│\e[0m 20       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 8        \e[0;37;90m│\e[0m Game of Thrones Boxed Set                                  \e[0;37;90m│\e[0m Books              \e[0;37;90m│\e[0m $37.69                  \e[0;37;90m│\e[0m 0        \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 9        \e[0;37;90m│\e[0m Equate Sports Broad Spectrum Sunscreen SPF30               \e[0;37;90m│\e[0m Personal care      \e[0;37;90m│\e[0m $8.99                   \e[0;37;90m│\e[0m 35       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 10       \e[0;37;90m│\e[0m Listerine Freshburst Antispectic Mouthwash 500mL           \e[0;37;90m│\e[0m Personal care      \e[0;37;90m│\e[0m $3.97                   \e[0;37;90m│\e[0m 20       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 11       \e[0;37;90m│\e[0m Stanley J5C09 Jump Starter with Air Compressor             \e[0;37;90m│\e[0m Auto               \e[0;37;90m│\e[0m $79.98                  \e[0;37;90m│\e[0m 175      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 12       \e[0;37;90m│\e[0m Good Year Wrangler 265/70R17 Tire                          \e[0;37;90m│\e[0m Auto               \e[0;37;90m│\e[0m $110                    \e[0;37;90m│\e[0m 70       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m└──────────┴────────────────────────────────────────────────────────────┴────────────────────┴─────────────────────────┴──────────┘\e[0m\e[0K\r\n\e[0K\e[?25h"
+  - delay: 13
+    content: "\e[0;32m?\e[0m \e[0;1mEnter the item Id of product you plan on purchasing:  \e[0m\e[0K\e[58G"
+  - delay: 4160
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the item Id of product you plan on purchasing:  \e[0m 1\e[0K\e[?25h"
+  - delay: 692
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the item Id of product you plan on purchasing:  \e[0m \e[0;36m1\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mEnter the quantity:  \e[0m\e[0K\e[25G\e[?25h"
+  - delay: 1151
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the quantity:  \e[0m 5\e[0K\e[?25h"
+  - delay: 875
+    content: "4\e[0K"
+  - delay: 442
+    content: "4\e[0K"
+  - delay: 666
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the quantity:  \e[0m \e[0;36m544\e[0m\e[0K\r\nThat's lot more than we carry.\e[0K\r\nChange your order, please.\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0;37;90m┌──────────┬────────────────────────────────────────────────────────────┬────────────────────┬─────────────────────────┬──────────┐\e[0m\e[0K\r\n\e[0;37;90m│\e[0;31m Item ID  \e[0;37;90m│\e[0;31m Name                                                       \e[0;37;90m│\e[0;31m Department         \e[0;37;90m│\e[0;31m Price                   \e[0;37;90m│\e[0;31m Quantity \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 1        \e[0;37;90m│\e[0m Bananas                                                    \e[0;37;90m│\e[0m Produce            \e[0;37;90m│\e[0m $0.6                    \e[0;37;90m│\e[0m 398      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 2        \e[0;37;90m│\e[0m Jalapeno Peppers                                           \e[0;37;90m│\e[0m Produce            \e[0;37;90m│\e[0m $0.7                    \e[0;37;90m│\e[0m 210      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 3        \e[0;37;90m│\e[0m Extra Gentle Daily Lotion                                  \e[0;37;90m│\e[0m Baby               \e[0;37;90m│\e[0m $9.98                   \e[0;37;90m│\e[0m 100      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 4        \e[0;37;90m│\e[0m Parasol Baby Diapers                                       \e[0;37;90m│\e[0m Baby               \e[0;37;90m│\e[0m $25.95                  \e[0;37;90m│\e[0m 50       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 5        \e[0;37;90m│\e[0m Metro Exodus Aurora Limited Edition XOBX                   \e[0;37;90m│\e[0m Video games        \e[0;37;90m│\e[0m $89.99                  \e[0;37;90m│\e[0m 45       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 6        \e[0;37;90m│\e[0m The Legend of Zelda                                        \e[0;37;90m│\e[0m Video games        \e[0;37;90m│\e[0m $59.88                  \e[0;37;90m│\e[0m 25       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 7        \e[0;37;90m│\e[0m Brown Bear Brown Bear What Do You See                      \e[0;37;90m│\e[0m Books              \e[0;37;90m│\e[0m $8.71                   \e[0;37;90m│\e[0m 20       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 8        \e[0;37;90m│\e[0m Game of Thrones Boxed Set                                  \e[0;37;90m│\e[0m Books              \e[0;37;90m│\e[0m $37.69                  \e[0;37;90m│\e[0m 0        \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 9        \e[0;37;90m│\e[0m Equate Sports Broad Spectrum Sunscreen SPF30               \e[0;37;90m│\e[0m Personal care      \e[0;37;90m│\e[0m $8.99                   \e[0;37;90m│\e[0m 35       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 10       \e[0;37;90m│\e[0m Listerine Freshburst Antispectic Mouthwash 500mL           \e[0;37;90m│\e[0m Personal care      \e[0;37;90m│\e[0m $3.97                   \e[0;37;90m│\e[0m 20       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 11       \e[0;37;90m│\e[0m Stanley J5C09 Jump Starter with Air Compressor             \e[0;37;90m│\e[0m Auto               \e[0;37;90m│\e[0m $79.98                  \e[0;37;90m│\e[0m 175      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 12       \e[0;37;90m│\e[0m Good Year Wrangler 265/70R17 Tire                          \e[0;37;90m│\e[0m Auto               \e[0;37;90m│\e[0m $110                    \e[0;37;90m│\e[0m 70       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m└──────────┴────────────────────────────────────────────────────────────┴────────────────────┴─────────────────────────┴──────────┘\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mEnter the item Id of product you plan on purchasing:  \e[0m\e[0K\e[58G\e[?25h"
+  - delay: 7771
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the item Id of product you plan on purchasing:  \e[0m 8\e[0K\e[?25h"
+  - delay: 749
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the item Id of product you plan on purchasing:  \e[0m \e[0;36m8\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mEnter the quantity:  \e[0m\e[0K\e[25G\e[?25h"
+  - delay: 597
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the quantity:  \e[0m 1\e[0K\e[?25h"
+  - delay: 664
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the quantity:  \e[0m \e[0;36m1\e[0m\e[0K\r\nInsufficient product in stock.\e[0K\r\nChange your order, please.\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0;37;90m┌──────────┬────────────────────────────────────────────────────────────┬────────────────────┬─────────────────────────┬──────────┐\e[0m\e[0K\r\n\e[0;37;90m│\e[0;31m Item ID  \e[0;37;90m│\e[0;31m Name                                                       \e[0;37;90m│\e[0;31m Department         \e[0;37;90m│\e[0;31m Price                   \e[0;37;90m│\e[0;31m Quantity \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 1        \e[0;37;90m│\e[0m Bananas                                                    \e[0;37;90m│\e[0m Produce            \e[0;37;90m│\e[0m $0.6                    \e[0;37;90m│\e[0m 398      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 2        \e[0;37;90m│\e[0m Jalapeno Peppers                                           \e[0;37;90m│\e[0m Produce            \e[0;37;90m│\e[0m $0.7                    \e[0;37;90m│\e[0m 210      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 3        \e[0;37;90m│\e[0m Extra Gentle Daily Lotion                                  \e[0;37;90m│\e[0m Baby               \e[0;37;90m│\e[0m $9.98                   \e[0;37;90m│\e[0m 100      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 4        \e[0;37;90m│\e[0m Parasol Baby Diapers                                       \e[0;37;90m│\e[0m Baby               \e[0;37;90m│\e[0m $25.95                  \e[0;37;90m│\e[0m 50       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 5        \e[0;37;90m│\e[0m Metro Exodus Aurora Limited Edition XOBX                   \e[0;37;90m│\e[0m Video games        \e[0;37;90m│\e[0m $89.99                  \e[0;37;90m│\e[0m 45       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 6        \e[0;37;90m│\e[0m The Legend of Zelda                                        \e[0;37;90m│\e[0m Video games        \e[0;37;90m│\e[0m $59.88                  \e[0;37;90m│\e[0m 25       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 7        \e[0;37;90m│\e[0m Brown Bear Brown Bear What Do You See                      \e[0;37;90m│\e[0m Books              \e[0;37;90m│\e[0m $8.71                   \e[0;37;90m│\e[0m 20       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 8        \e[0;37;90m│\e[0m Game of Thrones Boxed Set                                  \e[0;37;90m│\e[0m Books              \e[0;37;90m│\e[0m $37.69                  \e[0;37;90m│\e[0m 0        \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 9        \e[0;37;90m│\e[0m Equate Sports Broad Spectrum Sunscreen SPF30               \e[0;37;90m│\e[0m Personal care      \e[0;37;90m│\e[0m $8.99                   \e[0;37;90m│\e[0m 35       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 10       \e[0;37;90m│\e[0m Listerine Freshburst Antispectic Mouthwash 500mL           \e[0;37;90m│\e[0m Personal care      \e[0;37;90m│\e[0m $3.97                   \e[0;37;90m│\e[0m 20       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 11       \e[0;37;90m│\e[0m Stanley J5C09 Jump Starter with Air Compressor             \e[0;37;90m│\e[0m Auto               \e[0;37;90m│\e[0m $79.98                  \e[0;37;90m│\e[0m 175      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 12       \e[0;37;90m│\e[0m Good Year Wrangler 265/70R17 Tire                          \e[0;37;90m│\e[0m Auto               \e[0;37;90m│\e[0m $110                    \e[0;37;90m│\e[0m 70       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m└──────────┴────────────────────────────────────────────────────────────┴────────────────────┴─────────────────────────┴──────────┘\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mEnter the item Id of product you plan on purchasing:  \e[0m\e[0K\e[58G\e[?25h"
+  - delay: 4179
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the item Id of product you plan on purchasing:  \e[0m 1\e[0K\e[?25h"
+  - delay: 217
+    content: "1\e[0K"
+  - delay: 1714
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the item Id of product you plan on purchasing:  \e[0m \e[0;36m11\e[0m\e[0K\r\n\e[0;32m?\e[0m \e[0;1mEnter the quantity:  \e[0m\e[0K\e[25G\e[?25h"
+  - delay: 2882
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the quantity:  \e[0m 5\e[0K\e[?25h"
+  - delay: 312
+    content: "\e[?25l\r\e[0;32m?\e[0m \e[0;1mEnter the quantity:  \e[0m \e[0;36m5\e[0m\e[0K\r\nGreat news. It looks like we have that in stock!\e[0K\r\nPlacing your order. Thank you for your patience.\e[0K\r\n\e[0K\r\n\e[0K\r\n---------- Summary of your order ---------\e[0K\r\nProduct: Stanley J5C09 Jump Starter with Air Compressor\e[0K\r\nQuantity: 5\e[0K\r\n------------------------------------------\e[0K\r\nOrder total: $399.90\e[0K\r\n------------------------------------------\e[0K\r\n\e[0K\r\n\e[0K\r\n--- Inventory updated ---\e[0K\r\n\e[0K\e[?25h"
+  - delay: 33
+    content: "\e[0;37;90m┌──────────┬────────────────────────────────────────────────────────────┬────────────────────┬─────────────────────────┬──────────┐\e[0m\e[0K\e[?25l\r\n\e[0;37;90m│\e[0;31m Item ID  \e[0;37;90m│\e[0;31m Name                                                       \e[0;37;90m│\e[0;31m Department         \e[0;37;90m│\e[0;31m Price                   \e[0;37;90m│\e[0;31m Quantity \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 1        \e[0;37;90m│\e[0m Bananas                                                    \e[0;37;90m│\e[0m Produce            \e[0;37;90m│\e[0m $0.6                    \e[0;37;90m│\e[0m 398      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 2        \e[0;37;90m│\e[0m Jalapeno Peppers                                           \e[0;37;90m│\e[0m Produce            \e[0;37;90m│\e[0m $0.7                    \e[0;37;90m│\e[0m 210      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 3        \e[0;37;90m│\e[0m Extra Gentle Daily Lotion                                  \e[0;37;90m│\e[0m Baby               \e[0;37;90m│\e[0m $9.98                   \e[0;37;90m│\e[0m 100      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 4        \e[0;37;90m│\e[0m Parasol Baby Diapers                                       \e[0;37;90m│\e[0m Baby               \e[0;37;90m│\e[0m $25.95                  \e[0;37;90m│\e[0m 50       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 5        \e[0;37;90m│\e[0m Metro Exodus Aurora Limited Edition XOBX                   \e[0;37;90m│\e[0m Video games        \e[0;37;90m│\e[0m $89.99                  \e[0;37;90m│\e[0m 45       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 6        \e[0;37;90m│\e[0m The Legend of Zelda                                        \e[0;37;90m│\e[0m Video games        \e[0;37;90m│\e[0m $59.88                  \e[0;37;90m│\e[0m 25       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 7        \e[0;37;90m│\e[0m Brown Bear Brown Bear What Do You See                      \e[0;37;90m│\e[0m Books              \e[0;37;90m│\e[0m $8.71                   \e[0;37;90m│\e[0m 20       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 8        \e[0;37;90m│\e[0m Game of Thrones Boxed Set                                  \e[0;37;90m│\e[0m Books              \e[0;37;90m│\e[0m $37.69                  \e[0;37;90m│\e[0m 0        \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 9        \e[0;37;90m│\e[0m Equate Sports Broad Spectrum Sunscreen SPF30               \e[0;37;90m│\e[0m Personal care      \e[0;37;90m│\e[0m $8.99                   \e[0;37;90m│\e[0m 35       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 10       \e[0;37;90m│\e[0m Listerine Freshburst Antispectic Mouthwash 500mL           \e[0;37;90m│\e[0m Personal care      \e[0;37;90m│\e[0m $3.97                   \e[0;37;90m│\e[0m 20       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 11       \e[0;37;90m│\e[0m Stanley J5C09 Jump Starter with Air Compressor             \e[0;37;90m│\e[0m Auto               \e[0;37;90m│\e[0m $79.98                  \e[0;37;90m│\e[0m 170      \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m├──────────┼────────────────────────────────────────────────────────────┼────────────────────┼─────────────────────────┼──────────┤\e[0m\e[0K\r\n\e[0;37;90m│\e[0m 12       \e[0;37;90m│\e[0m Good Year Wrangler 265/70R17 Tire                          \e[0;37;90m│\e[0m Auto               \e[0;37;90m│\e[0m $110                    \e[0;37;90m│\e[0m 70       \e[0;37;90m│\e[0m\e[0K\r\n\e[0;37;90m└──────────┴────────────────────────────────────────────────────────────┴────────────────────┴─────────────────────────┴──────────┘\e[0m\e[0K\r\nPS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon>\e[0K\e[54G\e[?25h"
+  - delay: 2898
+    content: "\e[?25l\rPS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon> \e[0;33;93me\e[0m\e[0K\e[?25h"
+  - delay: 314
+    content: "\e[0;33;93mx\e[0m\e[0K"
+  - delay: 190
+    content: "\e[0;33;93mi\e[0m\e[0K"
+  - delay: 376
+    content: "\e[?25l\rPS C:\\Users\\arinm\\Workspace\\Github-Projects\\bamazon> \e[0;32;92mexit\e[0m\e[0K\e[?25h"
+  - delay: 278
+    content: "\e[?25l\r\n\e[0K\e[?25h"
